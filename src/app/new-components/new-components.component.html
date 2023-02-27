@@ -1,10 +1,12 @@
 <div class="container">
     <div *ngFor="let d of topDisplay ">
       <div class="box">
-        <img  alt="images" src="{{d.img}}" width="100%">
+        <img   [src]="d.img" >
         <h5>{{d.title}}</h5>
-        <a class="btn btn-dark btn-sm mt-2">{{d.content}} </a>
+        <p class="btn btn-dark btn-sm mt-2">{{d.content}} </p>
+        <a href="{{d.url}}">show</a>
       </div>
         
     </div>
 </div>
+
